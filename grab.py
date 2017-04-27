@@ -113,7 +113,7 @@ def main():
         except:
             print('fail')
 
-    oauth_headers = {'Authorization': 'Bearer {}'.format('Ri3W0GJzmWt19JiIiuea1Ihm2b9uti')} #get_oauth_tok())}
+    oauth_headers = {'Authorization': 'Bearer {}'.format(get_oauth_tok())}
 
     # get user details
     r = requests.get('http://online-go.com/api/v1/me/', 
